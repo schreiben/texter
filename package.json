@@ -1,0 +1,40 @@
+{
+  "name": "texter",
+  "version": "0.1.0",
+  "description": "A text editor for writers",
+  "main": "index.js",
+  "dependencies": {
+    "electron": "^1.4.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schreiben/texter.git"
+  },
+  "keywords": [
+    "text",
+    "editor",
+    "writer",
+    "author",
+    "creative",
+    "writing",
+    "language",
+    "grammar",
+    "spell",
+    "check",
+    "distraction",
+    "free",
+    "hipster",
+    "elegant",
+    "zen"
+  ],
+  "author": "Tilman Kamp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schreiben/texter/issues"
+  },
+  "homepage": "https://github.com/schreiben/texter#readme"
+}
