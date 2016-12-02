@@ -8,7 +8,9 @@
     "node-languagetool": "^0.3.0",
     "quill": "^1.1.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "bower": "^1.8.0"
+  },
   "scripts": {
     "test": "test.js"
   },
