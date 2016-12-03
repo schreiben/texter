@@ -1,0 +1,22 @@
+
+body, #editor-container {
+  margin: 0
+}
+
+#toolbar-container {
+}
+
+#editor-container {
+  width: 100%;
+  overflow: scroll;
+}
+
+.ql-container.ql-snow {
+  border: none;
+}
+
+.ql-toolbar.ql-snow {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
