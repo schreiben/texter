@@ -1,22 +1,36 @@
-
-body, #editor-container {
-  margin: 0
+html {
+  min-height: 100%;
+  position: relative;
 }
 
-#toolbar-container {
+body {
+  height: 100%;
 }
 
-#editor-container {
-  width: 100%;
-  overflow: scroll;
+#pagefill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.ql-container.ql-snow {
-  border: none;
+.top, .container, .bottom {
+  display: flex;
+  flex-direction: row;
 }
 
-.ql-toolbar.ql-snow {
-  border-top: none;
-  border-left: none;
-  border-right: none;
+.container {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.center {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
 }
