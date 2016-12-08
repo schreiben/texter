@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+
+import sys
+import Quartz
+
+wl = Quartz.CGWindowListCopyWindowInfo(Quartz.kCGWindowListOptionAll, Quartz.kCGNullWindowID)
+for v in wl:
+    title = v.valueForKey_('kCGWindowName')
+    if title is not None and len(title) is not 0:
+        if sys.argv[1] in title and not 'findWindow' in title:
+            print str(v.valueForKey_('kCGWindowNumber'))
+            quit()
