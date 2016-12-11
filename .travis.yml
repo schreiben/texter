@@ -1,0 +1,9 @@
+language: node_js
+node_js: "5.5.0"
+os:
+  - osx
+script: bash ./deploy.sh
+env:
+  global:
+  - ENCRYPTION_LABEL: "94a535f3a69d"
+  - COMMIT_AUTHOR_EMAIL: "tilmankamp@posteo.de"
