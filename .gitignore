@@ -41,3 +41,7 @@ jspm_packages
 
 # Other ignores
 .DS_Store
+
+# Secrets
+deployKey
+deployKey.pub
