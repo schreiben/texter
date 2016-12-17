@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 set -e
-./run.sh
-screencapture -l`tools/findWindow texter` out/shot1.png
+./run.sh &
+sleep 2
+screencapture -l`tools/findWindow the texter` out/shot1.png
 pkill Electron
