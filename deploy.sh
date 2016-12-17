@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e # Exit with nonzero exit code if anything fails
+set -ex # Exit with nonzero exit code if anything fails
 
 SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
@@ -58,6 +58,10 @@ openssl aes-256-cbc -K $ENCRYPTED_KEY -iv $ENCRYPTED_IV -in ../deployKey.enc -ou
 chmod 600 deployKey
 eval `ssh-agent -s`
 ssh-add deployKey
+
+echo "#!/usr/bin/env sh" > ssh-askpass
+chmod +x ssh-askpass
+export SSH_ASKPASS=$(pwd)/ssh-askpass
 
 # Now that we're all set up, we can push.
 git push $SSH_REPO $TARGET_BRANCH
