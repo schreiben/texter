@@ -4,8 +4,7 @@
   "description": "A text editor for writers",
   "main": "index.js",
   "dependencies": {
-    "electron": "^1.4.8",
-    "node-languagetool": "^0.3.0"
+    "electron": "^1.4.8"
   },
   "devDependencies": {
     "bower": "^1.8.0"
