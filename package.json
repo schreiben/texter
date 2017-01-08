@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "electron": "^1.4.8",
-    "node-languagetool": "^0.4.1"
+    "node-languagetool": "^0.4.1",
+    "typeface-libre-baskerville": "0.0.21"
   },
   "devDependencies": {
     "bower": "^1.8.0"
