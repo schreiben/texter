@@ -35,3 +35,7 @@ body {
   flex-direction: row;
   overflow: hidden;
 }
+
+.editor:focus {
+    outline: 0px solid transparent;
+}
