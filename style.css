@@ -24,6 +24,10 @@ body {
   flex-direction: row;
 }
 
+.left, .right {
+  width: 20%
+}
+
 .container {
   flex-grow: 1;
   overflow: hidden;
