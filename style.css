@@ -37,9 +37,13 @@ body {
   flex-grow: 1;
   display: flex;
   flex-direction: row;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .editor:focus {
     outline: 0px solid transparent;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
